@@ -1,11 +1,9 @@
-package nisan1;
+package nisan2;
 
 import java.util.Scanner;
 
-public class StringManipulation {
+public class LastIndexOf1 {
     public static void main(String[] args) {
-
-
         // Soru 2) Kullanicidan bir cumle ve bir kelime isteyin,
         //		kelimenin cumledeki kullanimina bakarak asagidaki 3 cumleden uygun olani yazdirin
         //    	- Girilen kelime cumlede kullanilmamis.
@@ -15,20 +13,22 @@ public class StringManipulation {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("bir cumle giriniz");
-        String cumle = scan.nextLine();
+        String cumle=scan.nextLine();
 
-        System.out.println("kontrol etmek istediginiz kelimeyi girin");
-        String kelime = scan.next();
+        System.out.println("bir kelime giriniz");
+        String kelime=scan.next();
 
-        int kelimeSayisi = cumle.indexOf(kelime);
+        int ilkIndex=cumle.indexOf(kelime);
+        int sonIndex=cumle.lastIndexOf(kelime);
 
-        if (kelimeSayisi < 0) {
+        if(ilkIndex==(-1)){
             System.out.println("kelime cumlede kullanilmamistir");
-        } else if (cumle.indexOf(kelime, kelimeSayisi + 1) == (-1)) {
-            System.out.println("kelime 1 kere kullanilmistir");
-        } else {
-            System.out.println("girilen kelime cumlede 1'den fazla kullanilmistir");
+        }else if(ilkIndex==sonIndex){
+            System.out.println("kelime 1 kez kullanilmistir");
+        }else{
+            System.out.println("kelime cumlede birden fazla kullanilsmitir");
         }
+
 
     }
 }
