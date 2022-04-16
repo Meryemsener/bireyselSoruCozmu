@@ -8,3 +8,5 @@ public class CokluArray {
        // System.out.println(arr[2][2]); boyut 2'ye 2 olmadigi icin konsolda hata verir
     }
 }
+
+
