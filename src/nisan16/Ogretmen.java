@@ -3,6 +3,7 @@ package nisan16;
 public class Ogretmen extends Kisi{
    private String bolum;
    private String sicilNo;
+
    public Ogretmen(){
 
    }

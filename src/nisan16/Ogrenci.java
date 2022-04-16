@@ -35,6 +35,11 @@ public class Ogrenci extends Kisi {
         this.sinif = sinif;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Ogrenci{" +
+                "ogrenciNo='" + ogrenciNo + '\'' +
+                ", sinif='" + sinif + '\'' +
+                '}';
+    }
 }
